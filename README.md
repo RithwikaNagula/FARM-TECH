@@ -1,20 +1,42 @@
-# Blood Bank Management System
+Farm-Tech is a smart agriculture platform designed to enhance farmers' productivity and market access through technology. It provides real-time support to farmers by offering crop recommendations, disease predictions, market trends, and weather forecasts. The platform also includes an intelligent chatbot and personalized notifications to improve decision-making and yield outcomes.
 
-Welcome to the Blood Bank Management System! This project is designed to help manage blood donations, track inventory, and streamline the donation process. It was developed with the guidance of Techinfo YT's YouTube channel.(https://youtu.be/4At9Tk1aTtQ?si=xkj04kVZBdo_vFHW)
 
-## Getting Started
+🌟 Features
+🌱 Crop Recommendation
+Suggests the most suitable crops based on soil and weather conditions.
 
-To get started with this project, follow these steps:
+🦠 Disease Prediction
+Uses AI to identify possible crop diseases from symptoms and provides solutions.
 
-### Prerequisites
+📈 Market Analysis
+Displays current market prices and trends to help farmers make informed selling decisions.
 
-1. **Node.js and npm**: Ensure you have Node.js and npm installed. You can download them from [nodejs.org](https://nodejs.org/).
+🌤 Weather Forecasting
+Integrates with weather APIs to give accurate, localized forecasts.
 
-2. **GitHub Desktop**: Install GitHub Desktop to easily manage and synchronize your repository. You can download it from [desktop.github.com](https://desktop.github.com/).
+🧠 AI Chatbot Support
+Interactive chatbot that answers agricultural queries and provides suggestions based on sentiment analysis.
 
-### Installation
+📊 Visual Analytics
+Dashboard with charts and statistics for monitoring farm and crop performance.
 
-1. **Clone the Repository**:
+🔔 Adaptive Notifications
+Personalized reminders and alerts based on user data
 
-   git clone https://github.com/shan-mukhi/Blood-Bank.git
-   Start the Development Server:  npm run dev
+
+
+To run the project locally:
+
+# Clone the repository
+git clone https://github.com/RithwikaNagula/FARM-TECH.git
+cd FARM-TECH
+
+# Start frontend
+cd client
+npm install
+npm start
+
+# Start backend
+cd ../backend
+pip install -r requirements.txt
+python app.py
