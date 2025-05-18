@@ -415,10 +415,7 @@ function App() {
           path="/weather-forecast"
           element={<WeatherForecast />}
         />
-        <Route
-          path="/disease-prediction"
-          element={<DiseasePrediction />}
-        />
+          <Route path="/disease-prediction" element={<DiseasePrediction />} />
         <Route
           path="/crop-prediction"
           element={

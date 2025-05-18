@@ -347,7 +347,7 @@ const FrontPage = () => {
           </Link> 
         </div>
             <div className="col-md-4">
-              <Link className="card h-100 info-card" onClick={() => window.location.href = '/disease-prediction'}>
+              <Link to="/disease-prediction" className="card h-100 info-card" onClick={() => window.location.href = '/disease-prediction'}>
                 <img src="https://cdn.britannica.com/89/126689-004-D622CD2F/Potato-leaf-blight.jpg" alt="Disease Prediction" className="card-img-top" />
                 <div className="card-body">
                   <h5 className="card-title">Disease Prediction</h5>
