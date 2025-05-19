@@ -23,7 +23,8 @@ Dashboard with charts and statistics for monitoring farm and crop performance.
 🔔 Adaptive Notifications
 Personalized reminders and alerts based on user data
 
-
+Live Demo:
+https://classy-horse-0db4ce.netlify.app/home
 
 To run the project locally:
 
