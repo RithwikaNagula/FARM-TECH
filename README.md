@@ -5,9 +5,6 @@ Farm-Tech is a smart agriculture platform designed to enhance farmers' productiv
 🌱 Crop Recommendation
 Suggests the most suitable crops based on soil and weather conditions.
 
-🦠 Disease Prediction
-Uses AI to identify possible crop diseases from symptoms and provides solutions.
-
 📈 Market Analysis
 Displays current market prices and trends to help farmers make informed selling decisions.
 
@@ -23,8 +20,6 @@ Dashboard with charts and statistics for monitoring farm and crop performance.
 🔔 Adaptive Notifications
 Personalized reminders and alerts based on user data
 
-Live Demo:
-https://classy-horse-0db4ce.netlify.app/home
 
 To run the project locally:
 
