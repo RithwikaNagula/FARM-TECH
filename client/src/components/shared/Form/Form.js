@@ -1,16 +1,13 @@
-
 import React, { useState } from "react";
 import InputType from "./InputType";
 import { Link } from "react-router-dom";
 import { handleLogin, handleRegister } from "../../../services/authService";
 
-const Form = ({ formType, submitBtn, formTitle }) => {
+  const Form = ({ formType, submitBtn, formTitle }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [role, setRole] = useState("donar");
   const [name, setName] = useState("");
-  const [organisationName, setOrganisationName] = useState("");
-  const [hospitalName, setHospitalName] = useState("");
   const [website, setWebsite] = useState("");
   const [address, setAddress] = useState("");
   const [phone, setPhone] = useState("");
@@ -28,10 +25,8 @@ const Form = ({ formType, submitBtn, formTitle }) => {
               email,
               password,
               phone,
-              organisationName,
               address,
-              hospitalName,
-              website
+              
             );
         }}
       >
@@ -43,12 +38,12 @@ const Form = ({ formType, submitBtn, formTitle }) => {
               type="radio"
               className="form-check-input"
               name="role"
-              id="donarRadio"
-              value={"donar"}
+              id="SupplierRadio"
+              value={"Supplier"}
               onChange={(e) => setRole(e.target.value)}
               defaultChecked
             />
-            <label htmlFor="donarRadio" className="form-check-label">
+            <label htmlFor="SupplierRadio" className="form-check-label">
               Supplier
             </label>
           </div>
@@ -63,42 +58,6 @@ const Form = ({ formType, submitBtn, formTitle }) => {
             />
             <label htmlFor="adminRadio" className="form-check-label">
               Admin
-            </label>
-          </div>
-          <div className="form-check ms-2">
-            <input
-              type="radio"
-              className="form-check-input"
-              name="role"
-              id="hospitalRadio"
-              value={"hospital"}
-              onChange={(e) => setRole(e.target.value)}
-              style={{ display: "none" }} // Hide the radio button
-            />
-            <label
-              htmlFor="hospitalRadio"
-              className="form-check-label"
-              style={{ color: "white" }} // Set text color to white
-            >
-              
-            </label>
-          </div>
-          <div className="form-check ms-2">
-            <input
-              type="radio"
-              className="form-check-input"
-              name="role"
-              id="organisationRadio"
-              value={"organisation"}
-              onChange={(e) => setRole(e.target.value)}
-              style={{ display: "none" }} // Hide the radio button
-            />
-            <label
-              htmlFor="organisationRadio"
-              className="form-check-label"
-              style={{ color: "white" }} // Set text color to white
-            >
-              
             </label>
           </div>
         </div>
@@ -130,7 +89,7 @@ const Form = ({ formType, submitBtn, formTitle }) => {
             case formType === "register": {
               return (
                 <>
-                  {(role === "admin" || role === "donar") && (
+                  {(role === "admin" || role === "Supplier") && (
                     <InputType
                       labelText={"Name"}
                       labelFor={"forName"}
@@ -140,26 +99,8 @@ const Form = ({ formType, submitBtn, formTitle }) => {
                       onChange={(e) => setName(e.target.value)}
                     />
                   )}
-                  {role === "organisation" && (
-                    <InputType
-                      labelText={"Organisation Name"}
-                      labelFor={"fororganisationName"}
-                      inputType={"text"}
-                      name={"organisationName"}
-                      value={organisationName}
-                      onChange={(e) => setOrganisationName(e.target.value)}
-                    />
-                  )}
-                  {role === "hospital" && (
-                    <InputType
-                      labelText={"Hospital Name"}
-                      labelFor={"forHospitalName"}
-                      inputType={"text"}
-                      name={"hospitalName"}
-                      value={hospitalName}
-                      onChange={(e) => setHospitalName(e.target.value)}
-                    />
-                  )}
+                 
+                
 
                   <InputType
                     labelText={"email"}
@@ -177,14 +118,7 @@ const Form = ({ formType, submitBtn, formTitle }) => {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                   />
-                  {/* <InputType
-                    labelText={"website"}
-                    labelFor={"forWebsite"}
-                    inputType={"text"}
-                    name={"website"}
-                    value={website}
-                    onChange={(e) => setWebsite(e.target.value)}
-                  /> */}
+                 
                   <InputType
                     labelText={"Address"}
                     labelFor={"forAddress"}
